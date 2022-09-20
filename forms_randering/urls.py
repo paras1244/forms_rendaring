@@ -19,7 +19,7 @@ from form_one.views import index, form_name_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
-    path('form/', form_name_view),
+    path('', index, name="home_page"),
+    path('form/', form_name_view, name="form_page"),
 
 ]
